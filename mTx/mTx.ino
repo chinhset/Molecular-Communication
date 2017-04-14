@@ -17,8 +17,6 @@ void loop() {
       Serial.print("\nSended message: ");
       for(int i = 0; i < sume; i++)
         Serial.print(c[i]);
-//      Serial.print("\nsume = ");
-//      Serial.print(sume);
       sume = 0;
     }
     else{
@@ -27,7 +25,7 @@ void loop() {
     }
   }
 }
-
+  // Convert char to binary and crate pwm
 void Encoder(){
   digitalWrite(2, 1);
   delay(200);
